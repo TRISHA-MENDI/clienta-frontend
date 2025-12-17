@@ -1,0 +1,45 @@
+/* ------ CRM quick dark theme (used by Navbar toggle) ------ */
+
+body.crm-dark {
+  background: #0b0b0b;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* MUI surfaces */
+body.crm-dark .MuiPaper-root,
+body.crm-dark .MuiAppBar-root,
+body.crm-dark .MuiDrawer-paper,
+body.crm-dark .MuiToolbar-root {
+  background: #0f0f10 !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+/* Typography */
+body.crm-dark .MuiTypography-root {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* DataGrid */
+body.crm-dark .MuiDataGrid-root,
+body.crm-dark .MuiDataGrid-cell {
+  background: transparent !important;
+  color: rgba(255,255,255,0.92) !important;
+}
+
+/* Inputs */
+body.crm-dark .MuiInputBase-root,
+body.crm-dark .MuiOutlinedInput-root {
+  background: rgba(255,255,255,0.02);
+  color: rgba(255,255,255,0.92);
+}
+
+/* Links/Icons */
+body.crm-dark a,
+body.crm-dark .MuiSvgIcon-root {
+  color: rgba(255,255,255,0.9);
+}
+
+/* Small tweak for the Drawer (sidebar) */
+body.crm-dark .MuiDrawer-paper {
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
