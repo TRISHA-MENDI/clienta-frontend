@@ -4,17 +4,18 @@ export default function OrdersCard() {
   const items = [
     {
       color: "green",
-      text: "$2400, Design changes",
+      amount: 2400,
+      user: "Design changes",
       date: "22 DEC 7:20 PM",
     },
     {
       color: "red",
-      text: "New order #1832412",
+      user: "New order #1832412",
       date: "21 DEC 11 PM",
     },
     {
       color: "blue",
-      text: "Server payments for April",
+      user: "Server payments for April",
       date: "21 DEC 9:34 PM",
     },
   ];
@@ -29,7 +30,11 @@ export default function OrdersCard() {
         <Box key={i} sx={{ display: "flex", gap: 2, mb: 2 }}>
           <Avatar sx={{ bgcolor: o.color }} />
           <Box>
-            <Typography fontWeight={600}>{o.text}</Typography>
+            <Typography fontWeight={600}>
+              {o.amount
+                ? `₹${o.amount.toLocaleString("en-IN")}, ${o.user}`
+                : o.user}
+            </Typography>
             <Typography fontSize={12} color="gray">
               {o.date}
             </Typography>

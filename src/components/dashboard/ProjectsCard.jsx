@@ -1,6 +1,8 @@
 import { Paper, Typography, Box, Avatar, LinearProgress } from "@mui/material";
 
 export default function ProjectsCard() {
+  const budget = 14000;
+
   return (
     <Paper sx={{ p: 3, borderRadius: 4 }}>
       <Typography variant="h6" fontWeight={600} mb={2}>
@@ -37,7 +39,10 @@ export default function ProjectsCard() {
           <Avatar sx={{ width: 32, height: 32 }} />
         </Box>
 
-        <Typography>$14,000</Typography>
+        {/* ₹ Currency */}
+        <Typography fontWeight={600}>
+          ₹{budget.toLocaleString("en-IN")}
+        </Typography>
 
         <LinearProgress
           variant="determinate"
